@@ -9,7 +9,7 @@ Side notes: most of the styles were adapted from the previous assignment 3.
 - [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
+- [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [File Structure](#file-structure)
 
@@ -34,6 +34,12 @@ You can view the live demo of the portfolio [here](https://codepen.io/lest-xu/pe
 - CSS3
 - Typescript
 - Fetch API
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your machine. You can download and install Node.js from [here](https://nodejs.org/en/download).
 
 ### Installation
 
