@@ -120,7 +120,7 @@ class IslandCountry implements ICountry {
 }
 
 // 5. set json data file url
-const countriesJsonUrl = "https://raw.githubusercontent.com/lest-xu/bucs601a2/main/countries.json";
+const countriesJsonUrl = "https://raw.githubusercontent.com/lest-xu/bucs601a4/master/public/countries.json";
 
 // 6. asynchronously fetech countries form my github
 async function fetchCountries(): Promise<void> {
