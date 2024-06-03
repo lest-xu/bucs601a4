@@ -2,6 +2,8 @@
 
 This is a simple Country Management System application built with TypeScript for my class CS 601 O1 Assignment 4 at Boston University. The application allows you to filter and display information about various countries based on their unique properties, such as whether they are rainy, snowy, or island countries.
 
+Side notes: most of the styles were adapted from the previous assignment 3.
+
 ## Table of Contents
 
 - [Demo](#demo)
