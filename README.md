@@ -15,7 +15,7 @@ Side notes: most of the styles were adapted from the previous assignment 3.
 
 ## Demo
 
-You can view the live demo of the portfolio [here](https://codepen.io/lest-xu/pen/vYwxqOP).
+You can view the live demo of the project [here](https://codepen.io/lest-xu/pen/vYwxqOP).
 
 ## Features
 
