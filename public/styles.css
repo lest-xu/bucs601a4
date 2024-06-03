@@ -1,0 +1,234 @@
+/* set the default margin and padding */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* set the padding and the border are included in the element's total width and height */
+}
+
+/* set the webpage body fonts and color*/
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: #333;
+	background-color: #fff;
+	line-height: 1.6;
+}
+
+
+/* set the header container for centering content with maximum width */
+.main-container {
+	width: 85%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/**** 1. header styling */
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #f9f9f9;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #e0e0e0;
+	/* set light grey border at the bottom of the header */
+}
+
+/* logo container styling */
+header .logo {
+	display: flex;
+	align-items: center;
+}
+
+/* header logo size styling */
+header .logo img {
+	height: 35px;
+	/* set the height of the logo image */
+	margin-right: 10px;
+	/* set space between the logo image and the text */
+	margin-left: 20px;
+	/* set logo align to the nav text */
+}
+
+/* logo text styling */
+header .logo span {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #333;
+}
+
+/**** 2. navbar styling */
+header nav ul {
+	list-style: none;
+	/* removes the default list styling */
+	display: flex;
+	/* displays the list items in a row */
+}
+
+/* navbar list item styling */
+header nav ul li {
+	margin-left: 20px;
+	/* set space between each navigation link */
+}
+
+/* navbar link styling */
+header nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	padding: 5px 0;
+	/* set vertical padding for clickable area */
+	transition: border-bottom 0.3s;
+	/* set smooth transition for border-bottom on hover */
+}
+
+/* set the navbar link hover effect */
+header nav ul li a:hover {
+	border-bottom: 2px solid #333;
+	/* set underline effect on hover */
+}
+
+/* set the navbar link focus effect */
+header nav ul li a:focus {
+	outline: none;
+	/* remove default focus outline */
+	border-bottom: 2px solid #3FD7D7;
+	/* when click the navbar link set the border color to a different one */
+}
+
+/**** 3. flex container styling for flex layout */
+.flex-container {
+	display: flex;
+	/* set the country and Country Filter sections side by side */
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px;
+	padding: 20px 0;
+	/* vertical padding for the main content */
+}
+
+.flex-item {
+	flex: 3;
+	/* set the country section width about 70%  */
+}
+
+.flex-item:nth-child(2) {
+	flex: 2;
+	/* set the Country Filter section width about 30%  */
+}
+
+/**** 4. main content styling ****/
+main {
+	/* set space between main content and sidebar */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/**** 5. country section ****/
+.countries {
+	margin-bottom: 40px;
+	/* set the space below the country section */
+}
+
+/* country section title styling */
+.countries h2 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: #333;
+	position: relative;
+	/* set the element's position */
+}
+
+/* grid container styling */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* responsive grid columns */
+	gap: 20px;
+	/* set the space between grid items */
+}
+
+/* individual grid item styling */
+.grid-item {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	transition: box-shadow 0.3s, transform 0.3s;
+	/* smooth transition for box-shadow and transform on hover */
+}
+
+/* grid item hover effect */
+.grid-item:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	/* slight shadow effect on hover */
+	transform: translateY(-5px);
+	/* lift effect on hover */
+}
+.type {
+	color: #3FD7D7;
+}
+/**** 6. sidebar section [Country Filter] ****/
+/* sidebar section styling */
+.sidebar {
+	background-color: #f9f9f9;
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	/* set the sidebar corners rounded */
+}
+/* select dropdwon styling */
+.select-dropdown,
+.select-dropdown * {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.select-dropdown {
+	position: relative;
+	background-color: #E6E6E6;
+	border-radius: 4px;
+}
+.select-dropdown select {
+	font-size: 1rem;
+	font-weight: normal;
+	max-width: 100%;
+	padding: 8px 24px 8px 10px;
+	border: none;
+	background-color: transparent;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+	outline: none;
+	box-shadow: none;
+}
+.select-dropdown:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid #aaa;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.filtered-countries {
+	margin-top: 20px; /* set space each filtered countries */
+}
+
+/**** 7. footer section ****/
+footer {
+	padding: 20px 0;
+	border-top: 1px solid #e0e0e0;
+	/* set the border to the light grey color at the top of the footer */
+	text-align: center;
+	color: #666;
+}
+

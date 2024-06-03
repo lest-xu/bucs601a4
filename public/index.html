@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Country Data Manager</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="./app.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="main-container">
+			<div class="logo">
+				<img src="https://cdn-icons-png.flaticon.com/512/9746/9746676.png" alt="Country Logo">
+				<span>Country Data Manager</span>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="flex-container">
+		<main class="flex-item">
+			<div class="countries">
+				<h2>All Countries</h2>
+				<div id="all-countries" class="grid-container"></div>
+			</div>
+		</main>
+
+		<div class="flex-item">
+			<div class="sidebar">
+				<h2>Country Filter</h2>
+				<p>Select a climate type</p>
+				<!-- climate type control -->
+				<div class="select-dropdown">
+					<select id="country-filter" style="width: 100%">
+					  <option value="">---</option>
+					  <option value="rainy">RAINY</option>
+					  <option value="snowy">SNOWY</option>
+					  <option value="island">ISLAND</option>
+					</select>
+				</div>
+				<div class="countries">
+					<div id="filtered-countries" class="filtered-countries"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<p>&copy; 2024 BU CS 601 O1 Assignment 4 - Li Xu . All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
