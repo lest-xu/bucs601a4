@@ -1,6 +1,6 @@
-# Li Xu Portfolio
+# Country Data Manager
 
-This project is a personal portfolio website for my class CS 601 O1 Assignment 3 at Boston University, showcasing projects, skills, and personal information. It is built using HTML and CSS with responsive layout.
+This project is a Country Data Manager website for my class CS 601 O1 Assignment 4 at Boston University, showcasing all countries, and filtering countries based on the country's climate type. It is built using HTML, CSS and Typescript with responsive layout.
 
 ## Table of Contents
 
